@@ -47,7 +47,7 @@ async def fresh(message: types.Message):
                     f'{value["Дата публикации"]}'
             await message.answer(tires)
     else:
-        await message.answer("Пока нет свежих предложений")
+        await message.answer("No fresh offers")
 
 async def news_every_minute():
     while True:
