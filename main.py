@@ -5,6 +5,13 @@ from av_215 import main as av
 from bamper_215 import main as bm
 import asyncio
 import random
+import openpyxl
+import pandas as pd
+
+data = pd.read_excel(io='22222.xlsx', engine='openpyxl')
+productors = set(data['production'])
+
+
 
 bot = Bot(token, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot=bot)
@@ -17,6 +24,13 @@ async def start(message: types.Message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(*start_buttons)
     await message.answer("Let'start bussines" , reply_markup=keyboard)
+
+@dp.message_handler(Text(equals='Models'))
+async def models(message: types.Message):
+    models_buttons = list(productors)
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(*models_buttons)
+    await message.answer("Choose a brand" , reply_markup=keyboard)
 
 @dp.message_handler(Text(equals='Fresh tires'))
 async def fresh(message: types.Message):
