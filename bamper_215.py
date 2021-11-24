@@ -16,16 +16,16 @@ headers = {
 
 HOST = "https://bamper.by/"
 urls = ['https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_60/sostoyanie_bu/tipavto_legkovye/kolvo_4/', 'https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_65/sostoyanie_bu/tipavto_legkovye/kolvo_4/']
-try:
-    with open('bamper_215.json', encoding='utf-8') as file:
-        data_dict = json.load(file)
-except:
-    data_dict = {}
 
 SLOW_DOWN = False
 
 l_id = 1
 def get_data():
+    try:
+        with open('bamper_215.json', encoding='utf-8') as file:
+            data_dict = json.load(file)
+    except:
+        data_dict = {}
     #useragents = open('../config/useragents').read().split('\n')
     proxies = open('config/proxies').read().split('\n')
     new_cards = {}
