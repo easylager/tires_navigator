@@ -52,6 +52,7 @@ async def fresh(message: types.Message):
 async def news_every_minute():
     while True:
         fresh_tires = av()
+        fresh_bamper = bm()
         if len(fresh_tires) > 0:
             print('more then 0')
             for key, value in sorted(fresh_tires.items()):
@@ -63,7 +64,6 @@ async def news_every_minute():
                         f'{value["Дата публикации"]}\n' \
                         f'{value["Дата продвижения"]}'
                 await bot.send_message(user_id, tires)
-        fresh_bamper = bm()
         if len(fresh_bamper) > 0:
             print('more then 0')
             for key, value in sorted(fresh_bamper.items()):
