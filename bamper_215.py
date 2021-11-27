@@ -139,13 +139,13 @@ def get_data():
                                  }
                 print(f'[INFO] parsed {l_id}')
                 l_id += 1
-    return new_cards
+    return new_cards, data_dict
 
 
 
 
 def main():
-    new_cards = get_data()
+    new_cards, data_dict = get_data()
     with open('bamper_215.json', 'w', encoding='utf-8') as file:
         json.dump(data_dict, file, indent=4, ensure_ascii=False)
     return new_cards

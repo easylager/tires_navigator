@@ -1,10 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import selenium
-from selenium import webdriver
+
 from time import sleep
-from selenium.webdriver.common.by import By
+
 from random import choice
 
 
