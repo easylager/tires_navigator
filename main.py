@@ -79,6 +79,7 @@ async def news_every_minute():
         await asyncio.sleep(random.randrange(60, 120))
 
 
+
 def main():
     loop = asyncio.get_event_loop()
     loop.create_task(news_every_minute())

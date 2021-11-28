@@ -9,7 +9,7 @@ from random import choice
 
 HOST = 'http://auto.kufar.by'
 
-urls = ['https://auto.kufar.by/l/r~minsk/cartyres-r16?catihe=v.or:8&catiwi=v.or:11&trq=v.or:15&cnd=1&cative=v.or:1&cur=BYR', 'https://auto.kufar.by/l/r~minsk/cartyres-r16?catihe=v.or:8,9&cur=BYR&cative=v.or:1&catiwi=v.or:11&cnd=1&trq=v.or:15']
+urls = ['https://auto.kufar.by/l/r~minsk/cartyres-r16?catise=v.or:1&catiwi=v.or:11&cnd=1&cur=BYR&catihe=v.or:8&trq=v.or:15', '']
 def get_data():
     useragents = open('../config/useragents').read().split('\n')
     proxies = open('../config/proxies').read().split('\n')

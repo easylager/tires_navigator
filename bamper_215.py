@@ -15,7 +15,9 @@ headers = {
 }
 
 HOST = "https://bamper.by/"
-urls = ['https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_60/sostoyanie_bu/tipavto_legkovye/kolvo_4/', 'https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_65/sostoyanie_bu/tipavto_legkovye/kolvo_4/']
+urls = ['https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_60/sostoyanie_bu/tipavto_legkovye/kolvo_4/',
+        'https://bamper.by/shiny/diametr_r16/sezon_zimnie/shirina_215/vysota_65/sostoyanie_bu/tipavto_legkovye/kolvo_4/',
+        'https://bamper.by/shiny/diametr_r15/sezon_zimnie/shirina_195/vysota_65/sostoyanie_bu/kolvo_4/?ACTION=REWRITED&FORM_DATA=diametr_r15%2Fsezon_zimnie%2Fshirina_195%2Fvysota_65%2Fsostoyanie_bu%2Fkolvo_4&PAGEN_1=2']
 
 SLOW_DOWN = False
 

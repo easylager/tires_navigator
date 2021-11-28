@@ -31,7 +31,8 @@ def get_data():
     new_cards = {}
     local_id = 1
     urls = ['https://koleso.av.by/tires/car/d_R16/width_215/height_65/state_used/region_minsk?tires_count%5B0%5D=4',
-            'https://koleso.av.by/tires/car/d_R16/width_215/height_60/state_used/region_minsk?tires_count%5B0%5D=4']
+            'https://koleso.av.by/tires/car/d_R16/width_215/height_60/state_used/region_minsk?tires_count%5B0%5D=4',
+            'https://koleso.av.by/tires/car/d_R15/width_195/height_65/state_used/region_minsk?tires_count%5B0%5D=4']
 
     for url in urls:
         headers = {
