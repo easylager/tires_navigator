@@ -1,14 +1,13 @@
 from aiogram import Bot, Dispatcher, executor, types
 from config import token, user_id
 from aiogram.dispatcher.filters import Text
-from av_215 import main as av
-from bamper_215 import main as bm
+from scrapers.av_scraper import main as av
+from scrapers.bamper_scraper import main as bm
 import asyncio
 import random
-import openpyxl
 import pandas as pd
 
-data = pd.read_excel(io='22222.xlsx', engine='openpyxl')
+data = pd.read_excel(io='market_report.xlsx', engine='openpyxl')
 productors = set(data['production'])
 
 

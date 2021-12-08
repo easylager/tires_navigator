@@ -5,7 +5,10 @@ import re
 from openpyxl import Workbook
 import datetime
 
-
+""""
+the file is intended for sorting the received data by the files  av_scraper.py and bamper_scraper.py
+and compiling a report for the analysis of the secondary tire market
+"""
 def create_first_df():
     df1 = read_csv('../av_by_parser_test.csv')
     df2 = read_csv('../bamper_parser.csv')
@@ -101,7 +104,7 @@ def seria_to_column(df, seria):
 
 
 def to_exel(df):
-    with pd.ExcelWriter('dataframe/main_files/full_data.xlsx') as writer:
+    with pd.ExcelWriter('analytics/main_files/full_data.xlsx') as writer:
         df.to_excel(writer, sheet_name='full_data')
 
 

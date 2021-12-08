@@ -24,12 +24,12 @@ SLOW_DOWN = False
 l_id = 1
 def get_data():
     try:
-        with open('bamper_215.json', encoding='utf-8') as file:
+        with open('../storages/bamper_storage.json', encoding='utf-8') as file:
             data_dict = json.load(file)
     except:
         data_dict = {}
     #useragents = open('../config/useragents').read().split('\n')
-    proxies = open('config/proxies').read().split('\n')
+    proxies = open('../config/proxies').read().split('\n')
     new_cards = {}
     for url in urls:
         global l_id
@@ -148,7 +148,7 @@ def get_data():
 
 def main():
     new_cards, data_dict = get_data()
-    with open('bamper_215.json', 'w', encoding='utf-8') as file:
+    with open('../storages/bamper_storage.json', 'w', encoding='utf-8') as file:
         json.dump(data_dict, file, indent=4, ensure_ascii=False)
     return new_cards
 

@@ -21,12 +21,12 @@ urls = ['https://koleso.av.by/tires/car/d_R16/width_215/height_65/state_used/reg
 
 def get_data():
     try:
-        with open('av_215.json', 'r', encoding='utf-8') as file:
+        with open('../av_215.json', 'r', encoding='utf-8') as file:
             data_list = json.load(file)
     except:
         data_list = {}
-    useragents = open('config/useragents').read().split('\n')
-    proxies = open('config/proxies').read().split('\n')
+    useragents = open('../config/useragents').read().split('\n')
+    proxies = open('../config/proxies').read().split('\n')
 
     new_cards = {}
     local_id = 1
@@ -142,7 +142,7 @@ def get_data():
 
 def main():
     new_cards, data_list = get_data()
-    with open('av_215.json', 'w', encoding='utf-8') as file:
+    with open('../av_215.json', 'w', encoding='utf-8') as file:
         json.dump(data_list, file, indent=4, ensure_ascii=False)
     return new_cards
 
