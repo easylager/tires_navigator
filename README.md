@@ -5,6 +5,6 @@ The project consists of 2 scrapers (scrapers/av_scraper.py and scrapers/bamper_s
 Main file is bot.py which collects data from storages/av_storage.json and sorage/bamper_storage.json and sends it to me through telegram.
 
 Description of the problem: 
-As a rule, really profitable offers are sold within 10-20 minutes after publication. The bot allows you to refuse constant monitoring and evaluation of proposals.
+As a rule, really profitable offers are sold within 10-20 minutes after publication. Thфt bot allows me to refuse constant monitoring and evaluation of proposals.
 The program searches for new proposals every minute (comparing id) and sends all the necessary characteristics in a convenient form in a message
 
