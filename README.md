@@ -1,4 +1,4 @@
-Hi, I present you my signal bot to buy used tires in Minsk.
+Hi, I present my signal bot to buy used tires in Minsk.
 
 The project consists of 2 scrapers (scrapers/av_scraper.py and scrapers/bamper_scraper.py, which correspond to the sites av.by and bamper.by) and stores information in storage/ folder and 1 bot that sends to telegrams new proposals of used tires according to my parameters to telegram.
 
